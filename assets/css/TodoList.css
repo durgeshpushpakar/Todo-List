@@ -1,0 +1,73 @@
+li{
+  background-color:#fff;
+  height:40px;
+  line-height:40px;                        /*see here*/ /*used to vertically align text in li*/
+}
+li:nth-child(2n){                        /*see here*/
+  background-color:#f7f7f7;
+}
+span{
+  background-color: #e74c3c;
+  color:white;
+  height:40px;
+  margin-right:20px;
+  width:0px;                      /*see here*/
+  display:inline-block;           /*see here*/
+  text-align:center;              /*see here*/    
+  transition:0.2s linear;          /*see here*/ 
+  opacity:0;                         /*see here*/ 
+}
+li:hover span{                       /*see here*/ 
+  width:40px;
+  opacity:1;
+}
+input{
+  font-size:18px;
+  background-color: #f7f7f7;
+  color:#40c7f7;
+  width:100%;
+  box-sizing:border-box;             /*see here*//*border-box includes padding */
+  padding:13px 13px 13px 20px;                   /*and border but not margin */
+  outline:none;
+  border:0;
+  border:3px solid transparent;
+}
+input:focus{
+  border:3px solid #40c7f7;
+  background-color: #fff;
+  outline:none;                          /*see here*/        
+}
+#container{
+  width:360px;
+  border:2px solid grey;
+  margin:100px auto;
+  background-color:#f7f7f7;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+body{
+  font-family:roboto;
+  background: #c2e59c;  /* fallback for old browsers */    /* from uigradients.com*/
+  background: -webkit-linear-gradient(to left, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.done{
+  color:grey;
+  text-decoration:line-through;
+}
+h1{
+  background-color:#40c7f7;
+  color:white;
+  margin:0;
+  padding:10px 20px;
+  text-transform:uppercase;             /*see here*/
+  font-size:24px;
+  font-weight: normal;
+}
+ul{
+  padding:0;
+  margin:0;
+}
+.fa-plus{
+  float:right;
+}
